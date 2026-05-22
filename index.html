@@ -27,9 +27,9 @@ button { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; f
 .workplace-image { width: 100%; height: 100%; object-fit: contain; display: block; }
 
 /* HOTSPOTS */
-.hotspot { position: absolute; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 152, 0, 0.25); border: 2px dashed rgba(255,152,0,.6); cursor: pointer; transform: translate(-50%, -50%); transition: all .2s; }
-.hotspot:hover { background: rgba(255,152,0,.45); border-color: #ff9800; transform: translate(-50%, -50%) scale(1.15); }
-.hotspot.found { background: rgba(46,125,50,.7); border: 3px solid #2e7d32; border-style: solid; cursor: default; animation: pop .4s ease; }
+.hotspot { position: absolute; width: 36px; height: 36px; border-radius: 50%; background: none; border: none; cursor: pointer; transform: translate(-50%, -50%); transition: all .2s; }
+.hotspot:hover { background:none; border-color: none; transform: translate(-50%, -50%) scale(2); }
+.hotspot.found { background: rgba(46,125,50,.7); border: 3px solid #2e7d32; border-style: solid; cursor: default; animation: pop .3s ease; }
 .hotspot.found::after { content: '✓'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font-weight: 700; font-size: 16px; }
 @keyframes pop { 0%{transform:translate(-50%,-50%) scale(0)} 60%{transform:translate(-50%,-50%) scale(1.3)} 100%{transform:translate(-50%,-50%) scale(1)} }
 
@@ -86,31 +86,31 @@ button { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; f
       <img src="postazione-vdt.png" alt="Postazione VDT" class="workplace-image">
 
       <!-- HOTSPOT 1: Schermo troppo alto -->
-      <div class="hotspot" data-id="1" style="top:18%;left:52%"
+      <div class="hotspot" data-id="1" style="top:13%;left:85%"
            data-title="Schermo posizionato troppo in alto"
            data-text="Il bordo superiore del monitor deve essere al livello degli occhi o leggermente sotto, per evitare l'iperestensione del collo. Un monitor troppo alto causa cervicalgia e affaticamento visivo. (All. XXXIV D.Lgs. 81/08)">
       </div>
 
       <!-- HOTSPOT 2: Sedia non regolata / schiena non supportata -->
-      <div class="hotspot" data-id="2" style="top:62%;left:30%"
+      <div class="hotspot" data-id="2" style="top:43%;left:22%"
            data-title="Schiena non supportata dallo schienale"
            data-text="Lo schienale deve sostenere la curva lombare e l'operatore deve sedersi con la schiena a contatto con esso. Stare in avanti o al bordo della sedia causa lombalgia e posture scorrette. (All. XXXIV D.Lgs. 81/08)">
       </div>
 
-      <!-- HOTSPOT 3: Tastiera lontana/Polsi sollevati -->
-      <div class="hotspot" data-id="3" style="top:72%;left:55%"
+      <!-- HOTSPOT 3: Tastiera lontana / polsi sollevati -->
+      <div class="hotspot" data-id="3" style="top:50%;left:62%"
            data-title="Tastiera troppo lontana, polsi sollevati"
            data-text="La tastiera deve essere posizionata in modo che i polsi siano dritti e gli avambracci paralleli al piano di lavoro. La distanza eccessiva obbliga a sollevare le spalle e stendere le braccia, causando tendiniti e sindrome del tunnel carpale.">
       </div>
 
       <!-- HOTSPOT 4: Fonte di luce che crea riflessi sullo schermo -->
-      <div class="hotspot" data-id="4" style="top:30%;left:75%"
+      <div class="hotspot" data-id="4" style="top:20%;left:60%"
            data-title="Fonte di luce che genera riflessi sullo schermo"
            data-text="Le finestre e le luci artificiali non devono trovarsi di fronte o dietro il monitor: causano abbagliamento e riflessi che affaticano la vista. Lo schermo deve essere posizionato di lato rispetto alle finestre, con veneziane o tende per regolare la luce. (All. XXXIV)">
       </div>
 
       <!-- HOTSPOT 5: Documento sul piano senza porta-copie -->
-      <div class="hotspot" data-id="5" style="top:55%;left:68%"
+      <div class="hotspot" data-id="5" style="top:62%;left:88%"
            data-title="Documento sul piano senza porta-copie"
            data-text="I documenti cartacei devono essere posizionati su un porta-copie alla stessa altezza e distanza del monitor. Tenerli sul piano obbliga a ruotare e abbassare continuamente la testa, causando affaticamento muscolare al collo e alle spalle.">
       </div>
